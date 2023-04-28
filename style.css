@@ -15,7 +15,7 @@ body {
     font-size: 30px;
     margin-bottom: 50px;
 }
-#minesweeper board {
+#minesweeper table {
     width: 400px;
     height: 400px;
     border: 10px solid darkgray;
@@ -23,12 +23,12 @@ body {
     display: flex;
     margin: auto;
 }
-#minesweeper board bp {
+#minesweeper table tr {
+    width: 400px;
+    height: 48px;
+}
+#minesweeper table td {
     width: 48px;
     height: 48px;
     border: 1px solid white;
-}
-#minesweeper board br {
-    width: 400px;
-    height: 48px;
 }
