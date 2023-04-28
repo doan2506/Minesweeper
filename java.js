@@ -7,17 +7,18 @@ window.onload = function() {
 }
 
 const game = document.getElementById("minesweeper")
-var board = document.createElement("board")
+var table = document.createElement("table")
 
 function startGame() {
     document.getElementById("mines-count").innerHTML = mines_count
     for(var i = 0; i < c; i++) {
-        var row = document.createElement("br")
+        var row = document.createElement("tr")
         for(var j = 0; j < r; j++) {
-            var tile = document.createElement("bp")
-            row.append(tile)
+            var tile = document.createElement("td")
+            row.appendChild(tile)
         }
-        board.append(row)
+        table.appendChild(row)
+        console.log(row)
     }
-    game.append(board)
+    game.appendChild(table)
 }
